@@ -1,0 +1,2 @@
+File,total_chunks,total_samples,total_compressed_bytes,bits_per_sample,successful_chunk_count,failed_chunk_count,success_rate,any_failed
+KP13_MUG_merged.0_0.csv,484783,31771473611,26074639485,6.565547397454646,484783,0,1.0,0

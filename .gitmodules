@@ -1,0 +1,19 @@
+[submodule "src/libs/lib-682-nanopore-compression"]
+	path = src/libs/lib-682-nanopore-compression
+	url = https://gitlab.fing.edu.uy/rafael.castelli.ottati/lib-682-nanopore-compression.git
+[submodule "src/libs/third_party/pod5-format-benchmark-fork"]
+	path = src/libs/third_party/pod5-format-benchmark-fork
+	url = https://gitlab.fing.edu.uy/rafael.castelli.ottati/pod5-format-benchmark-fork
+	branch = master-fork
+[submodule "src/libs/lib-nanopore-arithmetic-compression"]
+	path = src/libs/lib-nanopore-arithmetic-compression
+	url = https://gitlab.fing.edu.uy/rafael.castelli.ottati/lib-nanopore-arithmetic-compression.git
+[submodule "src/libs/third_party/slow5lib"]
+	path = src/libs/third_party/slow5lib
+	url = https://github.com/hasindu2008/slow5lib.git
+[submodule "src/libs/third_party/Piecewise-Differential-Zstd-Coder-POD5-Demo"]
+	path = src/libs/third_party/Piecewise-Differential-Zstd-Coder-POD5-Demo
+	url = https://github.com/Rafael-Cast/Piecewise-Differential-Zstd-Coder-POD5-Demo.git
+[submodule "src/libs/third_party/pod5-time-split"]
+	path = src/libs/third_party/pod5-time-split
+	url = https://gitlab.fing.edu.uy/rafael.castelli.ottati/pod5-format-benchmark-fork

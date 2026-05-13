@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-05-11T16:12:19",
+  "input_dir": "/Users/guille/Documents/FING/nanopore-compression-benchmarks/data/benchmark_bin/speed_dataset",
+  "algorithms": [
+    "VBZ",
+    "EX-ZD-ZSTD",
+    "PDZSerial",
+    "PDZ"
+  ],
+  "algorithm_token": "VBZ-EX-ZD-ZSTD-PDZSerial-PDZ",
+  "executable": "/Users/guille/Documents/FING/nanopore-compression-benchmarks/build/bin/speed_benchmark",
+  "hardware": {
+      "Chip": "Apple M4",
+      "Total Number of Cores": "10 (4 Performance and 6 Efficiency)",
+      "L1 Cache Performance Cores": "192 KB (instruction) / 128 KB (data)",
+      "L1 Cache Efficiency Cores": "128 KB (instruction) / 64 KB (data)",
+      "L2 Cache Performance Cores": "16 MB",
+      "L2 Cache Efficiency Cores": "4 MB",
+      "Memory": "16 GB",
+      "OS": "macOS 26.4.1"
+    }
+}

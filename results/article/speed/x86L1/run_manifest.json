@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-05-11T16:15:31",
+  "input_dir": "/Users/alvaro/Documents/RepositoriosProyectos/corridas-nano/nanopore-compression-benchmarks/data/benchmark_bin/speed_dataset",
+  "algorithms": [
+    "VBZ",
+    "EX-ZD-ZSTD",
+    "PDZSerial",
+    "PDZ"
+  ],
+  "algorithm_token": "VBZ-EX-ZD-ZSTD-PDZSerial-PDZ",
+  "executable": "/Users/alvaro/Documents/RepositoriosProyectos/corridas-nano/nanopore-compression-benchmarks/build/bin/speed_benchmark",
+  "hardware": {
+      "Processor Name": "Quad-Core Intel Core i5",
+      "Processor Speed": "1.4 GHz",
+      "Number of Processors": "1",
+      "Total Number of Cores": "4",
+      "L2 Cache (per Core)": "256 KB",
+      "L3 Cache": "6 MB",
+      "Memory": "16 GB",
+      "OS": "macOS 15.7.5"
+    }
+}

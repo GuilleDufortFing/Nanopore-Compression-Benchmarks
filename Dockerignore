@@ -1,0 +1,6 @@
+data/**
+build/**
+pre-compiled-bins/**
+results/**
+.matplotlib/**
+notebooks/**

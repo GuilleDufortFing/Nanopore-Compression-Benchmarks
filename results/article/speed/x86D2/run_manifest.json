@@ -1,0 +1,41 @@
+{
+  "timestamp": "2026-05-11T17:26:12",
+  "input_dir": "/home/tgonzalez/Facultad/Investigaci\u00f3n/nanopore-compression-benchmarks/data/benchmark_bin/speed_dataset",
+  "algorithms": [
+    "VBZ",
+    "EX-ZD-ZSTD",
+    "PDZSerial",
+    "PDZ"
+  ],
+  "algorithm_token": "VBZ-EX-ZD-ZSTD-PDZSerial-PDZ",
+  "executable": "/home/tgonzalez/Facultad/Investigaci\u00f3n/nanopore-compression-benchmarks/build/bin/speed_benchmark",
+    "hardware": {
+    "cpu": {
+      "Model name": "11th Gen Intel(R) Core(TM) i5-11400 @ 2.60GHz",
+      "Architecture": "x86_64",
+      "Thread(s) per core": 2,
+      "Core(s) per socket": 6,
+      "Socket(s)": 1,
+      "CPU max MHz": 4400.0000,
+      "CPU min MHz": 800.0000
+      },
+    "Memory": [
+      {
+        "Capacity": "8GB",
+        "Speed": "2667MT/s",
+        "Type": "DDR4",
+        "Manufacturer": "Crucial Technology"
+      },
+      {
+        "Capacity": "8GB",
+        "Speed": "2667MT/s",
+        "Type": "DDR4",
+        "Manufacturer": "Crucial Technology"
+      }
+    ],
+    "OS": {
+      "Pretty name": "Fedora Linux 43 (Workstation Edition)",
+      "Kernel": "6.19.14-200.fc43.x86_64"
+    }
+  }
+}

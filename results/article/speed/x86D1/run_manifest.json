@@ -1,0 +1,47 @@
+{
+  "timestamp": "2026-05-07T20:16:53",
+  "input_dir": "/home/rafael/Documents/repos/nanopore-publish/nanopore-compression-benchmarks/data/benchmark_bin/speed_dataset",
+  "algorithms": [
+    "VBZ",
+    "EX-ZD-ZSTD",
+    "PDZSerial",
+    "PDZ"
+  ],
+  "algorithm_token": "VBZ-EX-ZD-ZSTD-PDZSerial-PDZ",
+  "executable": "/home/rafael/Documents/repos/nanopore-publish/nanopore-compression-benchmarks/build/bin/speed_benchmark",
+  "hardware": {
+    "cpu": {
+      "Model name": "Intel(R) Core(TM) Ultra 7 265K",
+      "Architecture": "x86_64",
+      "Thread(s) per core": 1,
+      "Core(s) per socket": 20,
+      "Socket(s)": 1,
+      "CPU max MHz": 5600.0000,
+      "CPU min MHz": 800.0000,
+      "Caches (sum of all)": {
+        "L1d": "704 KiB (18 instances)",
+        "L1i": "1.1 MiB (18 instances)",
+        "L2": "36 MiB (11 instances)",
+        "L3": "30 MiB (1 instance)"
+      }
+    },
+    "Memory": [
+      {
+        "Capacity": "16GB",
+        "Speed": "6800MT/s",
+        "Type": "DDR5",
+        "Manufacturer": "Kingston"
+      },
+      {
+        "Capacity": "16GB",
+        "Speed": "6800MT/s",
+        "Type": "DDR5",
+        "Manufacturer": "Kingston"
+      }
+    ],
+    "OS": {
+      "Pretty name": "Fedora Linux 42 (Workstation Edition)",
+      "Kernel": "6.19.7-100.fc42.x86_64"
+    }
+  }
+}

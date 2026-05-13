@@ -1,0 +1,3 @@
+algorithm,observations,file_count,mean_roundtrip_peak_rss_kib,median_roundtrip_peak_rss_kib,min_roundtrip_peak_rss_kib,max_roundtrip_peak_rss_kib,mean_roundtrip_total_elapsed_seconds,median_roundtrip_total_elapsed_seconds,min_roundtrip_total_elapsed_seconds,max_roundtrip_total_elapsed_seconds
+PDZ,51,51,2268936.7843137253,2180808,1288928,3844904,4.758039215686274,4.57,2.73,7.84
+VBZ,51,51,2266510.3529411764,2175896,1291992,3845348,5.012745098039216,4.82,3.01,8.19

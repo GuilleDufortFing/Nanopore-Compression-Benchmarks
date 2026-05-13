@@ -1,0 +1,2 @@
+File,total_chunks,total_samples,total_compressed_bytes,bits_per_sample,successful_chunk_count,failed_chunk_count,success_rate,any_failed
+LM41_RKI_merged.0_0.csv,463373,25134216056,20969958777,6.674553518686439,463373,0,1.0,0

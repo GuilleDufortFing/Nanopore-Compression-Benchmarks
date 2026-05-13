@@ -1,0 +1,34 @@
+{
+  "timestamp": "2026-05-11T19:54:27",
+  "input_dir": "/Users/rafael/Documents/repos/nanopore-compression-benchmarks/data/benchmark_bin/speed_dataset",
+  "algorithms": [
+    "VBZ",
+    "EX-ZD-ZSTD",
+    "PDZSerial",
+    "PDZ"
+  ],
+  "algorithm_token": "VBZ-EX-ZD-ZSTD-PDZSerial-PDZ",
+  "executable": "/Users/rafael/Documents/repos/nanopore-compression-benchmarks/build/bin/speed_benchmark",
+  "hardware": {
+    "cpu": {
+      "Model name": "Apple M4 Pro",
+      "Architecture": "arm64",
+      "Core(s)": "14",
+      "Caches": {
+        "L1d": "64 KiB",
+        "L1i": "128 KiB",
+        "L2": "4 MiB"
+      }
+    },
+    "Memory": [
+      {
+        "Capacity": "24GB"
+      }
+    ],
+    "OS": {
+      "Pretty name": "macOS 15.6.1",
+      "Kernel": "24.6.0"
+    }
+  }
+
+}

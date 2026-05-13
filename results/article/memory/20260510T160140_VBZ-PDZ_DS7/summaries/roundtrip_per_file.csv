@@ -1,0 +1,3 @@
+relative_input_path,algorithm,repetition,algorithm_to_uncompressed_peak_rss_kib,uncompressed_to_algorithm_peak_rss_kib,roundtrip_peak_rss_kib,algorithm_to_uncompressed_elapsed_seconds,uncompressed_to_algorithm_elapsed_seconds,roundtrip_total_elapsed_seconds,prepared_input_bytes,uncompressed_output_bytes,recompressed_output_bytes
+LM41_RKI_merged.0_0.pod5,PDZ,1,20758720,49346884,49346884,62.46,60.48,122.94,21035399456,50319178008,21035399456
+LM41_RKI_merged.0_0.pod5,VBZ,1,21163796,49344956,49344956,64.06,65.53,129.59,21450962400,50319178008,21450962400

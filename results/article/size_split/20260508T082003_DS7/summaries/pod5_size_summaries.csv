@@ -1,0 +1,2 @@
+filename,total_bytes,uncompressed_signal_bytes,compressed_signal_bytes,total_signal_table_bytes,samples_pct,signal_table_pct,rows
+LM41_RKI_merged.0_0.pod5,21452359832,50268432112,21400362448,21409629908,0.9975761461952342,0.9980081480855891,463373

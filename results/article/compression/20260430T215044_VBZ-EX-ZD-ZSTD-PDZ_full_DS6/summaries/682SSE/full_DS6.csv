@@ -1,0 +1,2 @@
+File,total_chunks,total_samples,total_compressed_bytes,bits_per_sample,successful_chunk_count,failed_chunk_count,success_rate,any_failed
+SIRV_from_MNXKXX240359.csv,27781,799309062,700622879,7.012285107809775,27781,0,1.0,0

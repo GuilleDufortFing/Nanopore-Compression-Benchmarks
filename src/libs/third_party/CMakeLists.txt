@@ -1,0 +1,12 @@
+if (NOT TARGET arrow::arrow)
+    find_package(Arrow REQUIRED)
+    add_library(arrow::arrow INTERFACE IMPORTED)
+    if (TARGET Arrow::arrow_shared)
+        target_link_libraries(arrow::arrow INTERFACE Arrow::arrow_shared)
+    elseif(TARGET arrow::arrow_shared)
+        target_link_libraries(arrow::arrow INTERFACE arrow::arrow_shared)
+    endif()
+endif()
+
+add_subdirectory(pod5-format-benchmark-fork)
+add_subdirectory(pod5-time-split)

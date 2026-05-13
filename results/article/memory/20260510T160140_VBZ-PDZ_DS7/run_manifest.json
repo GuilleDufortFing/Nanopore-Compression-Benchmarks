@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-05-10T16:01:40",
+  "benchmark_type": "memory",
+  "platform_scope": "linux",
+  "input_dir": "/data/datananoraw/datasets_2026/DS7",
+  "algorithms": [
+    "VBZ",
+    "PDZ"
+  ],
+  "algorithm_token": "VBZ-PDZ",
+  "repetitions": 1,
+  "measurement_metric": "peak_rss_kib",
+  "measurement_tool": "/usr/bin/time",
+  "roundtrip_policy": "unmeasured input->algorithm setup, followed by measured algorithm->uncompressed and uncompressed->algorithm stages",
+  "keep_intermediates": false,
+  "pod5_file_count": 1,
+  "executable": "/data/gdufort/nanopore-compression-benchmarks/build/bin/copy"
+}

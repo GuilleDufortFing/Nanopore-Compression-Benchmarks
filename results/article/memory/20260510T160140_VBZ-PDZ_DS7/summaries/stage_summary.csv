@@ -1,0 +1,5 @@
+algorithm,stage,observations,file_count,mean_peak_rss_kib,median_peak_rss_kib,min_peak_rss_kib,max_peak_rss_kib,mean_elapsed_seconds,median_elapsed_seconds,min_elapsed_seconds,max_elapsed_seconds,mean_input_bytes,mean_output_bytes
+PDZ,algorithm_to_uncompressed,1,1,20758720.0,20758720,20758720,20758720,62.46,62.46,62.46,62.46,21035399456.0,50319178008.0
+PDZ,uncompressed_to_algorithm,1,1,49346884.0,49346884,49346884,49346884,60.48,60.48,60.48,60.48,50319178008.0,21035399456.0
+VBZ,algorithm_to_uncompressed,1,1,21163796.0,21163796,21163796,21163796,64.06,64.06,64.06,64.06,21450962400.0,50319178008.0
+VBZ,uncompressed_to_algorithm,1,1,49344956.0,49344956,49344956,49344956,65.53,65.53,65.53,65.53,50319178008.0,21450962400.0

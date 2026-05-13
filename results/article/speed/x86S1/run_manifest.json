@@ -1,0 +1,36 @@
+{
+  "timestamp": "2026-05-10T10:12:44",
+  "input_dir": "/data/gdufort/nanopore-compression-benchmarks/data/benchmark_bin/speed_dataset",
+  "algorithms": [
+    "VBZ",
+    "EX-ZD-ZSTD",
+    "PDZSerial",
+    "PDZ"
+  ],
+  "algorithm_token": "VBZ-EX-ZD-ZSTD-PDZSerial-PDZ",
+  "executable": "/data/gdufort/nanopore-compression-benchmarks/build/bin/speed_benchmark",
+  "hardware": {
+    "cpu": {
+      "Model name": "Intel(R) Core(TM) i9-10940X CPU @ 3.30GHz",
+      "Architecture": "x86_64",
+      "Thread(s) per core": 2,
+      "Core(s) per socket": 14,
+      "Socket(s)": 1,
+      "CPU max MHz": 4800.0000,
+      "CPU min MHz": 1200.0000,
+      "Caches (sum of all)": {
+        "L1d": "448 KiB (14 instances)",
+        "L1i": "448 KiB (14 instances)",
+        "L2": "14 MiB (14 instances)",
+        "L3": "19.25 MiB (1 instance)"
+      }
+    },
+    "Memory": {
+      "Memory": "256 GB"
+    },
+    "OS": {
+      "Pretty name": "Rocky Linux 8.8 (Green Obsidian)",
+      "Kernel": "4.18.0-553.85.1.el8_10.x86_64"
+    }
+  }
+}

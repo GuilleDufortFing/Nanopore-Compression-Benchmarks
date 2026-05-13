@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-04-30T22:18:36",
+  "input_dir": "/data/gdufort/nanopore-compression-benchmarks/data/benchmark_bin/full/DS8",
+  "algorithms": [
+    "VBZ",
+    "EX-ZD-ZSTD",
+    "682SSE"
+  ],
+  "algorithm_token": "VBZ-EX-ZD-ZSTD-682SSE",
+  "executable": "/data/gdufort/nanopore-compression-benchmarks/build/bin/compression_benchmark",
+  "jobs": 8
+}

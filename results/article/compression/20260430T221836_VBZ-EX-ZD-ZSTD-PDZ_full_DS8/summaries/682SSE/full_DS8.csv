@@ -1,0 +1,2 @@
+File,total_chunks,total_samples,total_compressed_bytes,bits_per_sample,successful_chunk_count,failed_chunk_count,success_rate,any_failed
+KP04_MUG_merged.0_0.csv,642721,42659985002,35041588392,6.571326903252717,642721,0,1.0,0
