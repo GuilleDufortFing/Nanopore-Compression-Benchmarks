@@ -19,7 +19,7 @@ Use this setup once, then choose one of the three workflows below.
 ### 1. Clone the repository
 
 ```sh
-git clone https://gitlab.fing.edu.uy/rafael.castelli.ottati/nanopore-compression-benchmarks
+git clone git@github.com:GuilleDufortFing/Nanopore-Compression-Benchmarks.git
 cd nanopore-compression-benchmarks
 git submodule update --init --recursive
 ```
