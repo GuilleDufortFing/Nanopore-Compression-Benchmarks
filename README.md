@@ -20,7 +20,7 @@ Use this setup once, then choose one of the three workflows below.
 
 ```sh
 git clone git@github.com:GuilleDufortFing/Nanopore-Compression-Benchmarks.git
-cd nanopore-compression-benchmarks
+cd Nanopore-Compression-Benchmarks
 git submodule update --init --recursive
 ```
 
