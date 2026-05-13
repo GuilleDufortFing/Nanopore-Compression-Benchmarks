@@ -100,24 +100,6 @@ cmake --build build -j
 
 If the conda activation hooks export `CC` and `CXX`, you can make the compiler selection explicit by adding `-DCMAKE_C_COMPILER="$CC"` and `-DCMAKE_CXX_COMPILER="$CXX"` to the configure command.
 
-### Optional: build the standalone `copy` executable for macOS
-
-```sh
-cd src/libs/third_party/Piecewise-Differential-Zstd-Coder-POD5-Demo/pod5
-python -c 'from pathlib import Path; from setuptools_scm import get_version; get_version(root=Path.cwd(), search_parent_directories=True, write_to="_version.py")'
-python -m pod5_make_version
-
-cd ..
-rm -rf build-copy
-cmake -S . -B build-copy -G Ninja \
-    -DCMAKE_BUILD_TYPE=Release \
-    -DCMAKE_PREFIX_PATH="$CONDA_PREFIX" \
-    -DZLIB_ROOT="$CONDA_PREFIX"
-
-cmake --build build-copy --target copy -j
-cd ../../../..
-```
-
 ### Notes for Apple Silicon and Intel Macs
 
 - The `c-compiler` and `cxx-compiler` packages from the README environment resolve to the correct toolchain for the active architecture.
