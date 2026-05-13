@@ -41,22 +41,8 @@ cmake -S . -B build \
 cmake --build build -j
 ```
 
-### Optional: patch the binaries for older host glibc
 
-If the host glibc is older than the conda sysroot, patch every executable under `build/bin/` to use the runtime from the active environment:
-
-```sh
-for binary in build/bin/*; do
-    [ -f "$binary" ] || continue
-    patchelf \
-        --set-interpreter "$CONDA_PREFIX/x86_64-conda-linux-gnu/sysroot/lib64/ld-linux-x86-64.so.2" \
-        --force-rpath \
-        --set-rpath "$CONDA_PREFIX/lib:$CONDA_PREFIX/x86_64-conda-linux-gnu/sysroot/lib64:$CONDA_PREFIX/x86_64-conda-linux-gnu/sysroot/usr/lib64" \
-        "$binary"
-done
-```
-
-### Optional: build the standalone `copy` executable on macOS
+### Optional: build the standalone `copy` executable
 
 This target is required for the memory benchmark and the copy appendix.
 
@@ -80,6 +66,21 @@ cmake --build build-copy --target copy -j
 cd ../../../..
 ```
 
+### Optional: patch the binaries for older host glibc
+
+If the host glibc is older than the conda sysroot, patch every executable under `build/bin/` to use the runtime from the active environment:
+
+```sh
+for binary in build/bin/*; do
+    [ -f "$binary" ] || continue
+    patchelf \
+        --set-interpreter "$CONDA_PREFIX/x86_64-conda-linux-gnu/sysroot/lib64/ld-linux-x86-64.so.2" \
+        --force-rpath \
+        --set-rpath "$CONDA_PREFIX/lib:$CONDA_PREFIX/x86_64-conda-linux-gnu/sysroot/lib64:$CONDA_PREFIX/x86_64-conda-linux-gnu/sysroot/usr/lib64" \
+        "$binary"
+done
+```
+
 ---
 
 ## macOS
@@ -99,7 +100,7 @@ cmake --build build -j
 
 If the conda activation hooks export `CC` and `CXX`, you can make the compiler selection explicit by adding `-DCMAKE_C_COMPILER="$CC"` and `-DCMAKE_CXX_COMPILER="$CXX"` to the configure command.
 
-### Optional: build the standalone `copy` executable
+### Optional: build the standalone `copy` executable for macOS
 
 ```sh
 cd src/libs/third_party/Piecewise-Differential-Zstd-Coder-POD5-Demo/pod5
