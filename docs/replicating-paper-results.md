@@ -35,15 +35,22 @@ This mirrors all POD5 datasets into `.bin` format under `data/benchmark_bin/full
 
 ## Step 3: Prepare the speed benchmark dataset
 
-The speed benchmark uses a smaller variant: the first `.bin` file from each dataset, capped at roughly 200 MB total per dataset. There is no automated script for this step. It was assembled manually.
+The speed benchmark uses a smaller variant built from the 200 MB cutoff `.bin` mirror. This step is manual.
+
+First, generate the cutoff layer:
+
+```sh
+python scripts/utils/build_computational_efficiency_datasets.py --cutoff-mb 200
+mkdir -p data/benchmark_bin/speed_dataset
+```
 
 For each dataset `DS1`–`DS10`:
 
-1. Look inside `data/benchmark_bin/full/DSN/`.
-2. Take only the **first** `.bin` file (alphabetically or by acquisition order, whichever was used originally).
-3. Place it in a dedicated directory, for example `data/benchmark_bin/speed_dataset/DSN/`.
+1. Look inside `data/benchmark_bin/200/DSN/`.
+2. Select the lexicographically first `.bin` file in that dataset directory.
+3. Copy that file directly into `data/benchmark_bin/speed_dataset/`.
 
-The resulting directory structure should mirror the full layout but contain only one file per dataset. This directory is what you pass to `run_speed_benchmark.py` for each machine.
+The resulting `data/benchmark_bin/speed_dataset/` directory should contain one selected `.bin` file per dataset, all at the top level. This directory is what you pass to `run_speed_benchmark.py` for each machine.
 
 ---
 
@@ -70,11 +77,11 @@ Run this on **each machine** you want to include. Pass the speed dataset directo
 
 ```sh
 python scripts/benchmarks/run_speed_benchmark.py \
-    data/benchmark_bin/speed_dataset/DS1 \
+  data/benchmark_bin/speed_dataset \
     VBZ EX-ZD-ZSTD PDZ
 ```
 
-Repeat for DS2–DS10. Each run writes to `results/generated/speed/<run-id>/`.
+Run this once per machine. Each run writes to `results/generated/speed/<run-id>/`.
 
 The article uses results from multiple machines. Collect the run directories from each machine and transfer them to the repository for analysis.
 

@@ -99,6 +99,8 @@ python scripts/benchmarks/run_memory_benchmark.py \
     --repetitions 3
 ```
 
+Optional algorithm names are positional arguments placed after `input_dir`. If you omit them, the runner defaults to `VBZ` and `PDZ`.
+
 The measured workflow is:
 
 1. **Unmeasured setup**: convert input → VBZ/PDZ POD5
